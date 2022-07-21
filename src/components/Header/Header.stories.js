@@ -11,5 +11,5 @@ export default {
 const Template = (args) => <Header {...args} />;
 
 //👇 Each story then reuses that template
-export const Primary = Template.bind({});
-Primary.args = {};
+export const Default = Template.bind({});
+Default.args = {};
