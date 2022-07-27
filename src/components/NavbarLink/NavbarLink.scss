@@ -1,0 +1,23 @@
+[data-component='NavbarLink'] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  height: max-content;
+  font-weight: bold;
+  a {
+    cursor: pointer;
+    transition: all 0.4s ease;
+    border-radius: 1.75em/1.5em;
+    font-size: 1.25rem;
+    color: var(--primary);
+    text-decoration: none;
+    background-color: var(--secondary);
+    padding: 6px 12px;
+
+    &:hover {
+      background-color: var(--primary);
+      color: var(--secondary);
+    }
+  }
+}

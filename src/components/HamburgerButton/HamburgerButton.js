@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './HamburgerButton.scss';
 import { Spin as Hamburger } from 'hamburger-react';
 import PropTypes from 'prop-types';

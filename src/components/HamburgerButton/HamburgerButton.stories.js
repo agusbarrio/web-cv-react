@@ -1,4 +1,4 @@
-import HamburgerButton from './HamburgerButton';
+import HamburgerButton from '.';
 
 export default { title: 'HamburgerButton', component: HamburgerButton };
 
@@ -9,4 +9,13 @@ const Template = (args) => (
 );
 
 export const Default = Template.bind({});
-Default.args = { iconSize: 36 };
+Default.args = {
+  onToggle: (toggle) => {
+    console.log('Click - Toggle state: ', toggle);
+  },
+};
+
+export const IncorrectToggle = Template.bind({});
+IncorrectToggle.args = {
+  onToggle: 'Incorrect Toggle',
+};

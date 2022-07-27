@@ -1,4 +1,3 @@
-import React from 'react';
 import './HomeLink.scss';
 function HomeLink() {
   return (
