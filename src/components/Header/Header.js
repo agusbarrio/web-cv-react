@@ -16,10 +16,11 @@ function Header() {
     [setMenuMobileActive]
   );
   useEffect(() => {
-    if (menuMobileActive) setMenuMobileActive(false);
+    setMenuMobileActive(false);
   }, [isMobile]);
+
   return (
-    <div data-component="Header" className={classnames({ isMobile })}>
+    <header data-component="Header" className={classnames({ isMobile })}>
       <div className="home-link-container">
         <HomeLink />
       </div>
@@ -35,7 +36,7 @@ function Header() {
       >
         <Navbar active={menuMobileActive} />
       </div>
-    </div>
+    </header>
   );
 }
 

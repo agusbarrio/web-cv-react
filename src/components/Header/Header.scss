@@ -30,7 +30,7 @@
     height: 100%;
     width: 100%;
     &.isMobile {
-      height: auto;
+      height: max-content;
     }
   }
 }
