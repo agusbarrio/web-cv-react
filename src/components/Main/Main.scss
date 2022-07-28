@@ -1,0 +1,10 @@
+[data-component='Main'] {
+  width: 100%;
+  .page-section {
+    width: 100%;
+    height: calc(100vh - 100px);
+  }
+  .page-section:first-child {
+    margin-top: 100px;
+  }
+}
