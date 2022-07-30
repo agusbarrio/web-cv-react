@@ -2,6 +2,7 @@ import './Main.scss';
 import { useState, useEffect } from 'react';
 import { useMediaQuery } from '@mui/material';
 import { MEDIAQUERIES } from '../../constants';
+
 function Main() {
   const [videoSrc, setVideoSrc] = useState('movil-video.mp4');
   const isMobile = useMediaQuery(MEDIAQUERIES.xs);
@@ -20,10 +21,12 @@ function Main() {
           src={videoSrc}
         ></video>
       </section>
-      <section className="page-section"></section>
-      <section className="page-section"></section>
-      <section className="page-section"></section>
-      <section className="page-section"></section>
+      <section className="page-section" id="about"></section>
+      <section className="page-section" id="skills"></section>
+      <section className="page-section" id="projects"></section>
+      <section className="page-section" id="experience"></section>
+      <section className="page-section" id="studies"></section>
+      <section className="page-section" id="contact"></section>
     </main>
   );
 }

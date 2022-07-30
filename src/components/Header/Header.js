@@ -1,32 +1,43 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useContext } from 'react';
 import './Header.scss';
-import HomeLink from '../HomeLink';
+import ImageLink from '../ImageLink';
 import Navbar from '../Navbar';
 import HamburgerButton from '../HamburgerButton';
 import { useMediaQuery } from '@mui/material';
 import { MEDIAQUERIES } from '../../constants';
 import classnames from 'classnames';
+import NavbarContext from '../../contexts/NavbarContext';
 function Header() {
   const isMobile = useMediaQuery(MEDIAQUERIES.xs);
-  const [menuMobileActive, setMenuMobileActive] = useState(false);
-  const onToggleButton = useCallback(
-    (toggle) => {
-      setMenuMobileActive(toggle);
-    },
-    [setMenuMobileActive]
-  );
+  const { navbarIsOpen, openNavbar, closeNavbar } = useContext(NavbarContext);
+  const handleButtonHamburgerClick = useCallback(() => {
+    if (navbarIsOpen) {
+      closeNavbar();
+    } else {
+      openNavbar();
+    }
+  }, [navbarIsOpen, closeNavbar, openNavbar]);
+
   useEffect(() => {
-    setMenuMobileActive(false);
+    closeNavbar();
   }, [isMobile]);
 
   return (
     <header data-component="Header" className={classnames({ isMobile })}>
       <div className="home-link-container">
-        <HomeLink />
+        <ImageLink
+          handleClick={closeNavbar}
+          href="/#"
+          src="./logo.png"
+          alt="Inicio"
+        />
       </div>
       {isMobile && (
         <div className="navbar-menu-button-container">
-          <HamburgerButton onToggle={onToggleButton} />
+          <HamburgerButton
+            toggled={navbarIsOpen}
+            handleClick={handleButtonHamburgerClick}
+          />
         </div>
       )}
       <div
@@ -34,7 +45,7 @@ function Header() {
           isMobile,
         })}
       >
-        <Navbar active={menuMobileActive} />
+        <Navbar />
       </div>
     </header>
   );

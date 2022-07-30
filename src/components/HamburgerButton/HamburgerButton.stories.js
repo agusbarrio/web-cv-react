@@ -1,5 +1,4 @@
 import HamburgerButton from '.';
-
 export default { title: 'HamburgerButton', component: HamburgerButton };
 
 const Template = (args) => (
@@ -8,14 +7,8 @@ const Template = (args) => (
   </div>
 );
 
-export const Default = Template.bind({});
-Default.args = {
-  onToggle: (toggle) => {
-    console.log('Click - Toggle state: ', toggle);
-  },
-};
+export const ToggleOn = Template.bind({});
+ToggleOn.args = { toggled: true };
 
-export const IncorrectToggle = Template.bind({});
-IncorrectToggle.args = {
-  onToggle: 'Incorrect Toggle',
-};
+export const ToggleOff = Template.bind({});
+ToggleOff.args = { toggled: false };

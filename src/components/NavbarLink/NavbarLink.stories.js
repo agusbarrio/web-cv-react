@@ -10,7 +10,4 @@ const Template = (args) => <NavbarLink {...args} />;
 export const Default = Template.bind({});
 Default.args = {
   textContent: 'My Button',
-  onClick: () => {
-    console.log('NavbarLink click');
-  },
 };

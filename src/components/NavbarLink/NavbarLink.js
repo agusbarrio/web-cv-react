@@ -1,22 +1,16 @@
 import './NavbarLink.scss';
-import _ from 'lodash';
 import PropTypes from 'prop-types';
-function NavbarButton({ href, textContent, onClick }) {
+import { useContext } from 'react';
+import NavbarContext from '../../contexts/NavbarContext';
+function NavbarButton({ href, textContent }) {
+  const { closeNavbar } = useContext(NavbarContext);
   return (
-    <div data-component="NavbarLink">
-      <a
-        href={href}
-        onClick={(e) => {
-          if (_.isFunction(onClick)) onClick(e);
-        }}
-      >
-        {textContent}
-      </a>
+    <div data-component="NavbarLink" onClick={closeNavbar}>
+      <a href={href}>{textContent}</a>
     </div>
   );
 }
 NavbarButton.propTypes = {
-  onClick: PropTypes.func,
   href: PropTypes.string,
   textContent: PropTypes.string,
 };

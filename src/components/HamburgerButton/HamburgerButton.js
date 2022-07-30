@@ -1,18 +1,12 @@
-import { useState } from 'react';
 import './HamburgerButton.scss';
 import { Spin as Hamburger } from 'hamburger-react';
 import PropTypes from 'prop-types';
 
-function HamburgerButton({ onToggle }) {
-  const [open, setOpen] = useState(false);
+function HamburgerButton({ toggled = false, handleClick }) {
   return (
-    <div data-component="HamburgerButton">
+    <div data-component="HamburgerButton" onClick={handleClick}>
       <Hamburger
-        toggled={open}
-        toggle={() => {
-          setOpen(!open);
-        }}
-        onToggle={onToggle}
+        toggled={toggled}
         size={36}
         rounded
         color="var(--primary)"
@@ -22,7 +16,8 @@ function HamburgerButton({ onToggle }) {
 }
 
 HamburgerButton.propTypes = {
-  onToggle: PropTypes.func,
+  toggled: PropTypes.bool,
+  handleClick: PropTypes.func,
 };
 
 export default HamburgerButton;

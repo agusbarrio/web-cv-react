@@ -1,4 +1,5 @@
 import '../src/index.scss';
+import { NavbarProvider } from '../src/contexts/NavbarContext';
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
   controls: {
@@ -8,3 +9,10 @@ export const parameters = {
     },
   },
 };
+export const decorators = [
+  (Story) => (
+    <NavbarProvider>
+      <Story />
+    </NavbarProvider>
+  ),
+];

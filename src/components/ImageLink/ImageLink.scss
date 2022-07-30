@@ -1,4 +1,4 @@
-[data-component='HomeLink'] {
+[data-component='ImageLink'] {
   border-radius: 50%;
   overflow: hidden;
   width: 100%;
@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   img {
     max-width: 100%;
     max-height: 100%;
