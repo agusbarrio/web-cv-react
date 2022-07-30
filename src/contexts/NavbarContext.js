@@ -1,15 +1,15 @@
-import { createContext, useState } from 'react';
+import { createContext, useState, useCallback } from 'react';
 
 const NavbarContext = createContext();
 
 export function NavbarProvider({ children }) {
   const [navbarIsOpen, setNavbarIsOpen] = useState(false);
-  const openNavbar = () => {
+  const openNavbar = useCallback(() => {
     setNavbarIsOpen(true);
-  };
-  const closeNavbar = () => {
+  }, []);
+  const closeNavbar = useCallback(() => {
     setNavbarIsOpen(false);
-  };
+  }, []);
 
   return (
     <NavbarContext.Provider value={{ navbarIsOpen, openNavbar, closeNavbar }}>

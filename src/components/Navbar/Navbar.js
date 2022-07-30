@@ -3,7 +3,6 @@ import { useMediaQuery } from '@mui/material';
 import { MEDIAQUERIES } from '../../constants';
 import classnames from 'classnames';
 import NavbarLink from '../NavbarLink';
-import PropTypes from 'prop-types';
 import NavbarContext from '../../contexts/NavbarContext';
 import { useContext } from 'react';
 

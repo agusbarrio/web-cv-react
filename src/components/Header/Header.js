@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect, useContext } from 'react';
+import { useCallback, useEffect, useContext } from 'react';
 import './Header.scss';
 import ImageLink from '../ImageLink';
 import Navbar from '../Navbar';
