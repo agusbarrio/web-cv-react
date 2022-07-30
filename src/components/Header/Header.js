@@ -20,7 +20,7 @@ function Header() {
 
   useEffect(() => {
     closeNavbar();
-  }, [isMobile]);
+  }, [isMobile, closeNavbar]);
 
   return (
     <header data-component="Header" className={classnames({ isMobile })}>
