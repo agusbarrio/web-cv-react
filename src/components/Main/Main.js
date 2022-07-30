@@ -1,17 +1,18 @@
 import './Main.scss';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { useMediaQuery } from '@mui/material';
 import { MEDIAQUERIES } from '../../constants';
-
+import NavbarContext from '../../contexts/NavbarContext';
 function Main() {
   const [videoSrc, setVideoSrc] = useState('movil-video.mp4');
   const isMobile = useMediaQuery(MEDIAQUERIES.xs);
+  const { closeNavbar } = useContext(NavbarContext);
   useEffect(() => {
     if (isMobile) setVideoSrc('movil-video.mp4');
     else setVideoSrc('video.mp4');
   }, [isMobile]);
   return (
-    <main data-component="Main">
+    <main data-component="Main" onClick={closeNavbar}>
       <section className="page-section">
         <video
           className="hero-video"
