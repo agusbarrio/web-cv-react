@@ -6,10 +6,25 @@
   padding: 2rem;
   background-size: cover;
   background-position: center center;
+  .section-container {
+    margin: auto;
+    height: 100%;
+  }
   @include for-mobile {
     background-image: url('../../../public/background-mobile.png');
+    .section-container {
+      width: 100%;
+    }
+  }
+  @include for-tablet {
+    background-image: url('../../../public/background.png');
+    .section-container {
+      width: 80%;
+    }
   }
   @include for-desktop {
-    background-image: url('../../../public/background.png');
+    .section-container {
+      width: 60%;
+    }
   }
 }

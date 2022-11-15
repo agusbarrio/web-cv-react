@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 function Section({ id, children }) {
   return (
     <section data-component="Section" id={id}>
-      {children}
+      <div className="section-container">{children}</div>
     </section>
   );
 }

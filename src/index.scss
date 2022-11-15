@@ -8,8 +8,13 @@
     @content;
   }
 }
-@mixin for-desktop {
+@mixin for-tablet {
   @media (min-width: 576px) {
+    @content;
+  }
+}
+@mixin for-desktop {
+  @media (min-width: 768px) {
     @content;
   }
 }
