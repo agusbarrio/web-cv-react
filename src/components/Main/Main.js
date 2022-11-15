@@ -3,6 +3,7 @@ import { useState, useEffect, useContext } from 'react';
 import { useMediaQuery } from '@mui/material';
 import { MEDIAQUERIES } from '../../constants';
 import NavbarContext from '../../contexts/NavbarContext';
+import Section from '../Section';
 function Main() {
   const [videoSrc, setVideoSrc] = useState(null);
   const isMobile = useMediaQuery(MEDIAQUERIES.xs);
@@ -13,7 +14,7 @@ function Main() {
   }, [isMobile]);
   return (
     <main data-component="Main" onClick={closeNavbar}>
-      <section className="page-section">
+      <section className="hero-video-section">
         <video
           className="hero-video"
           autoPlay={true}
@@ -22,24 +23,12 @@ function Main() {
           src={videoSrc}
         ></video>
       </section>
-      <section className="page-section" id="about">
-        <article className="card-section"></article>
-      </section>
-      <section className="page-section" id="skills">
-        <article className="card-section"></article>
-      </section>
-      <section className="page-section" id="projects">
-        <article className="card-section"></article>
-      </section>
-      <section className="page-section" id="experience">
-        <article className="card-section"></article>
-      </section>
-      <section className="page-section" id="studies">
-        <article className="card-section"></article>
-      </section>
-      <section className="page-section" id="contact">
-        <article className="card-section"></article>
-      </section>
+      <Section id="about"></Section>
+      <Section id="skills"></Section>
+      <Section id="projects"></Section>
+      <Section id="experience"></Section>
+      <Section id="studies"></Section>
+      <Section id="contact"></Section>
     </main>
   );
 }

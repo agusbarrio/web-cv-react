@@ -1,0 +1,15 @@
+@import '../../index.scss';
+[data-component='Section'] {
+  scroll-margin-top: 100px;
+  width: 100%;
+  height: calc(100vh - 100px);
+  padding: 2rem;
+  background-size: cover;
+  background-position: center center;
+  @include for-mobile {
+    background-image: url('../../../public/background-mobile.png');
+  }
+  @include for-desktop {
+    background-image: url('../../../public/background.png');
+  }
+}
