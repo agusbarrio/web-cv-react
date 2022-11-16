@@ -9,7 +9,6 @@ const buttons = [
   { href: '#skills', textContent: 'Habilidades' },
   { href: '#projects', textContent: 'Proyectos' },
   { href: '#experience', textContent: 'Experiencia' },
-  { href: '#studies', textContent: 'Estudios' },
   { href: '#contact', textContent: 'Contacto' },
 ];
 

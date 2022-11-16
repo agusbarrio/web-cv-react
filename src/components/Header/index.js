@@ -1,15 +1,15 @@
-import { useCallback, useEffect, useContext } from 'react';
+import { useCallback, useEffect } from 'react';
 import './style.scss';
 import ImageLink from '../ImageLink';
 import Navbar from '../Navbar';
 import HamburgerButton from '../HamburgerButton';
 import { useMediaQuery } from 'react-responsive';
-import { MEDIAQUERIES } from '../../constants';
+import { ASSETS, MEDIAQUERIES } from '../../constants';
 import classnames from 'classnames';
-import NavbarContext from '../../contexts/NavbarContext';
+import useNavbar from '../../hooks/useNavbar';
 function Header() {
   const isMobile = useMediaQuery({ query: MEDIAQUERIES.xs });
-  const { navbarIsOpen, openNavbar, closeNavbar } = useContext(NavbarContext);
+  const { navbarIsOpen, openNavbar, closeNavbar } = useNavbar();
   const handleButtonHamburgerClick = useCallback(() => {
     if (navbarIsOpen) {
       closeNavbar();
@@ -28,7 +28,7 @@ function Header() {
         <ImageLink
           handleClick={closeNavbar}
           href="/#"
-          src="./logo.png"
+          src={ASSETS.LOGO}
           alt="Inicio"
         />
       </div>

@@ -18,6 +18,11 @@
     @content;
   }
 }
+@mixin simple-shadow {
+  box-shadow: -6px 6px 17px -2px rgba(0, 0, 0, 0.76);
+  -webkit-box-shadow: -6px 6px 17px -2px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: -6px 6px 17px -2px rgba(0, 0, 0, 0.76);
+}
 
 body {
   margin: 0;

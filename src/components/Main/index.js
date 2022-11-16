@@ -1,16 +1,17 @@
 import './style.scss';
-import { useState, useEffect, useContext } from 'react';
+import { useState, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
-import { MEDIAQUERIES } from '../../constants';
-import NavbarContext from '../../contexts/NavbarContext';
+import { MEDIAQUERIES, ASSETS } from '../../constants';
 import Section from '../Section';
+import About from '../About';
+import useNavbar from '../../hooks/useNavbar';
 function Main() {
   const [videoSrc, setVideoSrc] = useState(null);
   const isMobile = useMediaQuery({ query: MEDIAQUERIES.xs });
-  const { closeNavbar } = useContext(NavbarContext);
+  const { closeNavbar } = useNavbar();
   useEffect(() => {
-    if (isMobile) setVideoSrc('movil-video.mp4');
-    else setVideoSrc('video.mp4');
+    if (isMobile) setVideoSrc(ASSETS.HERO_VIDEO_MOBILE);
+    else setVideoSrc(ASSETS.HERO_VIDEO_DESKTOP);
   }, [isMobile]);
   return (
     <main data-component="Main" onClick={closeNavbar}>
@@ -23,7 +24,9 @@ function Main() {
           src={videoSrc}
         ></video>
       </section>
-      <Section id="about"></Section>
+      <Section id="about">
+        <About></About>
+      </Section>
       <Section id="skills"></Section>
       <Section id="projects"></Section>
       <Section id="experience"></Section>
