@@ -1,0 +1,32 @@
+{
+  "module-templates.engine": "handlebars",
+  "module-templates.templates": {
+    "react-component": {
+      "displayName": "Scss React component",
+      "defaultPath": "source/components",
+      "folder": "{{pascal name}}",
+      "questions": {
+        "name": "Component name"
+      },
+      "files": [
+        {
+          "name": "index.js",
+          "content": [
+            "import './style.scss';",
+            "",
+            "function {{pascal name}}() {",
+            "  return <div data-component=\"{{pascal name}}\">Content</div>;",
+            "}",
+            "",
+            "export default {{pascal name}};",
+            ""
+          ]
+        },
+        {
+          "name": "style.scss",
+          "content": ["[data-component='{{pascal name}}'] {", "}", ""]
+        }
+      ]
+    }
+  }
+}

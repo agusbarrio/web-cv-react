@@ -11,12 +11,30 @@
     margin: 0;
     text-align: center;
   }
-  div {
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     height: 60%;
-    img {
+    .about-image {
       height: 100%;
-      border-radius: 1rem;
+      border-radius: 0.5rem;
       @include simple-shadow;
+    }
+    .about-info {
+      flex-grow: 1;
+      height: 100%;
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .cards-container {
+      flex-grow: 1;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
     }
   }
 }

@@ -3,12 +3,12 @@ import './style.scss';
 import ImageLink from '../ImageLink';
 import Navbar from '../Navbar';
 import HamburgerButton from '../HamburgerButton';
-import { useMediaQuery } from 'react-responsive';
 import { ASSETS, MEDIAQUERIES } from '../../constants';
 import classnames from 'classnames';
 import useNavbar from '../../hooks/useNavbar';
+import useScreenSize from '../../hooks/useScreenSize';
 function Header() {
-  const isMobile = useMediaQuery({ query: MEDIAQUERIES.xs });
+  const { isMobile } = useScreenSize();
   const { navbarIsOpen, openNavbar, closeNavbar } = useNavbar();
   const handleButtonHamburgerClick = useCallback(() => {
     if (navbarIsOpen) {

@@ -1,13 +1,13 @@
 import './style.scss';
 import { useState, useEffect } from 'react';
-import { useMediaQuery } from 'react-responsive';
-import { MEDIAQUERIES, ASSETS } from '../../constants';
+import { ASSETS } from '../../constants';
 import Section from '../Section';
 import About from '../About';
 import useNavbar from '../../hooks/useNavbar';
+import useScreenSize from '../../hooks/useScreenSize';
 function Main() {
   const [videoSrc, setVideoSrc] = useState(null);
-  const isMobile = useMediaQuery({ query: MEDIAQUERIES.xs });
+  const { isMobile } = useScreenSize();
   const { closeNavbar } = useNavbar();
   useEffect(() => {
     if (isMobile) setVideoSrc(ASSETS.HERO_VIDEO_MOBILE);
