@@ -1,0 +1,10 @@
+@import '../../index.scss';
+[data-component='Skills'] {
+  height: 100%;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  & > * {
+    @include simple-shadow;
+  }
+}

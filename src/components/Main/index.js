@@ -5,6 +5,7 @@ import Section from '../Section';
 import About from '../About';
 import useNavbar from '../../hooks/useNavbar';
 import useScreenSize from '../../hooks/useScreenSize';
+import Skills from '../Skills';
 function Main() {
   const [videoSrc, setVideoSrc] = useState(null);
   const { isMobile } = useScreenSize();
@@ -25,9 +26,11 @@ function Main() {
         ></video>
       </section>
       <Section id="about">
-        <About></About>
+        <About />
       </Section>
-      <Section id="skills"></Section>
+      <Section id="skills">
+        <Skills />
+      </Section>
       <Section id="projects"></Section>
       <Section id="experience"></Section>
       <Section id="studies"></Section>

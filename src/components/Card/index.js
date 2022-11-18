@@ -6,6 +6,8 @@ function Card({ description, title, variant = 'center', children }) {
     switch (variant) {
       case 'center':
         return 'card-center';
+      case 'start-center':
+        return 'card-start-center';
       default:
         return 'card-center';
     }
@@ -13,7 +15,7 @@ function Card({ description, title, variant = 'center', children }) {
 
   return (
     <div data-component="Card" className={variantClass}>
-      {!!title && <div className="card-title">{title}</div>}
+      {!!title && <h4 className="card-title">{title}</h4>}
       {!!description && <div className="card-description">{description}</div>}
       {children}
     </div>
