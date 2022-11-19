@@ -1,10 +1,20 @@
-@import '../../index.scss';
+@import '../../constants/styles/mixins.scss';
 [data-component='Skills'] {
   height: 100%;
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
   & > * {
     @include simple-shadow;
+  }
+  h2 {
+    margin: 1rem;
+  }
+  .card-content-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
 }

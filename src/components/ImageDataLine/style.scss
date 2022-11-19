@@ -1,0 +1,12 @@
+[data-component='ImageDataLine'] {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  height: 2rem;
+  img {
+    height: 100%;
+  }
+}

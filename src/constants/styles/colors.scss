@@ -1,0 +1,21 @@
+@use 'sass:map';
+$colors: (
+  'primary': #3d9db9,
+  'primary-light': #74ceeb,
+  'primary-dark': #006f89,
+  'secondary': #212529,
+  'secondary-light': #484d51,
+  'secondary-dark': #000000,
+  'text-primary': #000000,
+  'text-secondary': #ffffff,
+);
+
+@function color($color) {
+  @return map.get($colors, $color);
+}
+
+:export {
+  @each $key, $color in $colors {
+    #{$key}: $color;
+  }
+}

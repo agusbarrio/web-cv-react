@@ -1,3 +1,4 @@
+@import '../../constants/styles/colors.scss';
 [data-component='NavbarLink'] {
   display: flex;
   justify-content: center;
@@ -10,14 +11,14 @@
     transition: all 0.4s ease;
     border-radius: 1.75em/1.5em;
     font-size: 1.25rem;
-    color: var(--primary);
+    color: color('primary');
     text-decoration: none;
-    background-color: var(--secondary);
+    background-color: color('secondary');
     padding: 6px 12px;
 
     &:hover {
-      background-color: var(--primary);
-      color: var(--secondary);
+      background-color: color('primary');
+      color: color('secondary');
     }
   }
 }

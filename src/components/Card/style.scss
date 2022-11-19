@@ -1,4 +1,5 @@
-@import '../../index.scss';
+@import '../../constants/styles/colors.scss';
+@import '../../constants/styles/mixins.scss';
 [data-component='Card'] {
   &.card-center {
     display: flex;
@@ -30,7 +31,7 @@
   }
   width: 100%;
   height: 100%;
-  background-color: var(--primary);
+  background-color: color('primary');
   border-radius: 0.5rem;
   padding: 1rem;
   @include simple-shadow;

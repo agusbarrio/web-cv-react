@@ -3,7 +3,7 @@ import './style.scss';
 import ImageLink from '../ImageLink';
 import Navbar from '../Navbar';
 import HamburgerButton from '../HamburgerButton';
-import { ASSETS, MEDIAQUERIES } from '../../constants';
+import { ASSETS } from '../../constants';
 import classnames from 'classnames';
 import useNavbar from '../../hooks/useNavbar';
 import useScreenSize from '../../hooks/useScreenSize';

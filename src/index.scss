@@ -1,29 +1,3 @@
-:root {
-  --primary: #3d9db9;
-  --secondary: #212529;
-}
-
-@mixin for-mobile {
-  @media (max-width: 575px) {
-    @content;
-  }
-}
-@mixin for-tablet {
-  @media (min-width: 576px) {
-    @content;
-  }
-}
-@mixin for-desktop {
-  @media (min-width: 768px) {
-    @content;
-  }
-}
-@mixin simple-shadow {
-  box-shadow: -6px 6px 17px -2px rgba(0, 0, 0, 0.76);
-  -webkit-box-shadow: -6px 6px 17px -2px rgba(0, 0, 0, 0.76);
-  -moz-box-shadow: -6px 6px 17px -2px rgba(0, 0, 0, 0.76);
-}
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

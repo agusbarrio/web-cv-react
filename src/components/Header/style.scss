@@ -1,3 +1,4 @@
+@import '../../constants/styles/colors.scss';
 [data-component='Header'] {
   position: fixed;
   top: 0;
@@ -6,7 +7,7 @@
   width: 100%;
   height: 100px;
   display: flex;
-  background-color: var(--secondary);
+  background-color: color('secondary');
   justify-content: space-between;
   z-index: 999;
   &.isMobile {

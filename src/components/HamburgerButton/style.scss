@@ -1,5 +1,6 @@
+@import '../../constants/styles/colors.scss';
 [data-component='HamburgerButton'] {
-  border: 1px solid var(--primary);
+  border: 1px solid color('primary');
   max-width: 100px;
   max-height: 100px;
   width: 100%;

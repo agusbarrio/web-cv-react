@@ -1,4 +1,5 @@
 import './style.scss';
+import colors from '../../constants/styles/colors.scss';
 import { Spin as Hamburger } from 'hamburger-react';
 import PropTypes from 'prop-types';
 
@@ -9,7 +10,7 @@ function HamburgerButton({ toggled = false, handleClick }) {
         toggled={toggled}
         size={36}
         rounded
-        color="var(--primary)"
+        color={colors.primary}
       ></Hamburger>
     </div>
   );
