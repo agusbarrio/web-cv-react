@@ -2,11 +2,14 @@ import './style.scss';
 import Card from '../Card';
 import ImageDataLine from '../ImageDataLine';
 import ASSETS from '../../constants/ASSETS';
+import Text from '../Text';
 function Skills() {
   return (
     <div data-component="Skills">
       <Card variant="start-center">
-        <h2>Backend</h2>
+        <Text variant="h4" component="h2">
+          Backend
+        </Text>
         <div className="card-content-skills">
           <ImageDataLine img={ASSETS.LOGO_NODE} text={'Node.js'} />
           <ImageDataLine img={ASSETS.LOGO_GQL} text={'GraphQL'} />
@@ -14,8 +17,11 @@ function Skills() {
         </div>
       </Card>
       <Card variant="start-center">
-        <h2>Frontend</h2>
+        <Text variant="h4" component="h2">
+          Frontend
+        </Text>
         <div className="card-content-skills">
+          {/* TODO sacar este texto y agregar habilidades */}
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
           blanditiis accusantium rerum, dicta, inventore quos distinctio, animi
           saepe voluptatibus quam tenetur! Consequuntur eius placeat repellendus

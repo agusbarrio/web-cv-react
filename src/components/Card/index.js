@@ -1,4 +1,5 @@
 import { useMemo } from 'react';
+import Text from '../Text';
 import './style.scss';
 
 function Card({ description, title, variant = 'center', children }) {
@@ -15,8 +16,16 @@ function Card({ description, title, variant = 'center', children }) {
 
   return (
     <div data-component="Card" className={variantClass}>
-      {!!title && <h4 className="card-title">{title}</h4>}
-      {!!description && <div className="card-description">{description}</div>}
+      {!!title && (
+        <Text className="card-title" variant="h5" component="h3">
+          {title}
+        </Text>
+      )}
+      {!!description && (
+        <Text className="card-description" variant="body2" component="p">
+          {description}
+        </Text>
+      )}
       {children}
     </div>
   );
