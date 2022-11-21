@@ -2,13 +2,11 @@
 [data-component='Section'] {
   scroll-margin-top: 100px;
   width: 100%;
-  height: calc(100vh - 100px);
   padding: 2rem;
   background-size: cover;
   background-position: center center;
   .section-container {
     margin: auto;
-    height: 100%;
   }
   @include for-mobile {
     background-image: url('../../../public/assets/background-mobile.png');
@@ -19,12 +17,12 @@
   @include for-tablet {
     background-image: url('../../../public/assets/background.png');
     .section-container {
-      width: 80%;
+      width: 85%;
     }
   }
   @include for-desktop {
     .section-container {
-      width: 65%;
+      width: 70%;
     }
   }
 }

@@ -1,5 +1,5 @@
 import './style.scss';
-
+import PropTypes from 'prop-types';
 function ImageDataLine({ img, text }) {
   return (
     <figure data-component="ImageDataLine">
@@ -10,5 +10,8 @@ function ImageDataLine({ img, text }) {
     </figure>
   );
 }
-
+ImageDataLine.propTypes = {
+  img: PropTypes.string,
+  text: PropTypes.string,
+};
 export default ImageDataLine;

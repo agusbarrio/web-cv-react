@@ -1,12 +1,13 @@
 import './style.scss';
 import PropTypes from 'prop-types';
 import React from 'react';
+import classNames from 'classnames';
 
 function Text({
   variant = 'body1',
   component = 'span',
   children,
-  className,
+  className = '',
   ...props
 }) {
   return React.createElement(
@@ -14,7 +15,7 @@ function Text({
     {
       // eslint-disable-next-line no-useless-computed-key
       ['data-component']: 'Text',
-      className: `${variant} ${className ?? ''}`,
+      className: classNames(variant, className),
       ...props,
     },
     children
@@ -35,5 +36,7 @@ Text.propTypes = {
     'body3',
   ]),
   component: PropTypes.string,
+  children: PropTypes.any,
+  className: PropTypes.string,
 };
 export default Text;

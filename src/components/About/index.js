@@ -1,24 +1,21 @@
 import { ASSETS } from '../../constants';
 import './style.scss';
 import Card from '../Card';
-import useScreenSize from '../../hooks/useScreenSize';
 import Text from '../Text';
 
 function About() {
-  const { isMobile } = useScreenSize();
   return (
     <article data-component="About">
-      <Text variant="h1" component="h1">
+      <Text variant="h1" component="h1" className="about-title">
         Desarrollador Full Stack
       </Text>
       <div className="about-content">
-        {!isMobile && (
-          <img
-            className="about-image"
-            src={ASSETS.ME}
-            alt="Agustín Barrio Eastman"
-          />
-        )}
+        <img
+          className="about-image"
+          src={ASSETS.ME}
+          alt="Agustín Barrio Eastman"
+        />
+
         <div className="about-info">
           <Text variant="body1" component="p">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ad

@@ -14,6 +14,8 @@ function Skills() {
           <ImageDataLine img={ASSETS.LOGO_NODE} text={'Node.js'} />
           <ImageDataLine img={ASSETS.LOGO_GQL} text={'GraphQL'} />
           <ImageDataLine img={ASSETS.LOGO_MYSQL} text={'MySQL'} />
+          <ImageDataLine img={ASSETS.LOGO_SEQUELIZE} text={'Sequelize'} />
+          <ImageDataLine img={ASSETS.LOGO_EXPRESS} text={'Express.js'} />
         </div>
       </Card>
       <Card variant="start-center">
