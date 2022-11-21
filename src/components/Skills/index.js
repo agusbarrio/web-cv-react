@@ -23,11 +23,11 @@ function Skills() {
           Frontend
         </Text>
         <div className="card-content-skills">
-          {/* TODO sacar este texto y agregar habilidades */}
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-          blanditiis accusantium rerum, dicta, inventore quos distinctio, animi
-          saepe voluptatibus quam tenetur! Consequuntur eius placeat repellendus
-          mollitia ratione eos, ad veniam.
+          <ImageDataLine img={ASSETS.LOGO_JAVASCRIPT} text={'Javascript'} />
+          <ImageDataLine img={ASSETS.LOGO_HTML} text={'HTML'} />
+          <ImageDataLine img={ASSETS.LOGO_CSS} text={'CSS'} />
+          <ImageDataLine img={ASSETS.LOGO_REACT} text={'React.js'} />
+          <ImageDataLine img={ASSETS.LOGO_MUI} text={'Material UI'} />
         </div>
       </Card>
     </div>
