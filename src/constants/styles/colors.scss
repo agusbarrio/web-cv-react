@@ -3,11 +3,9 @@ $colors: (
   'primary': #3d9db9,
   'primary-light': #74ceeb,
   'primary-dark': #006f89,
-  'secondary': #212529,
-  'secondary-light': #484d51,
+  'secondary': #101010,
+  'secondary-light': #363636,
   'secondary-dark': #000000,
-  'text-primary': #000000,
-  'text-secondary': #ffffff,
 );
 
 @function color($color) {

@@ -9,13 +9,11 @@
     margin: auto;
   }
   @include for-mobile {
-    background-image: url('../../../public/assets/background-mobile.png');
     .section-container {
       width: 100%;
     }
   }
   @include for-tablet {
-    background-image: url('../../../public/assets/background.png');
     .section-container {
       width: 85%;
     }

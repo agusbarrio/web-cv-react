@@ -17,7 +17,7 @@ function About() {
         />
 
         <div className="about-info">
-          <Text variant="body1" component="p">
+          <Text variant="body1" component="p" className="about-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ad
             odit ratione eos perferendis iusto temporibus delectus. Laudantium
             veritatis laborum reiciendis rerum non nemo hic accusantium sunt,

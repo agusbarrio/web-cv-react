@@ -1,6 +1,8 @@
+@import '../../constants/styles/colors.scss';
 [data-component='Main'] {
   width: 100%;
   margin-top: 100px;
+  background-color: color('secondary');
   .hero-video-section {
     scroll-margin-top: 100px;
     width: 100%;
