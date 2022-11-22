@@ -1,6 +1,12 @@
 @import '../../constants/styles/colors.scss';
 @import '../../constants/styles/mixins.scss';
 [data-component='Card'] {
+  width: 100%;
+  height: 100%;
+  background-color: color('primary');
+  border-radius: 0.5rem;
+  padding: 1rem;
+  @include simple-shadow;
   &.card-center {
     display: flex;
     justify-content: center;
@@ -29,10 +35,13 @@
       text-align: center;
     }
   }
-  width: 100%;
-  height: 100%;
-  background-color: color('primary');
-  border-radius: 0.5rem;
-  padding: 1rem;
-  @include simple-shadow;
+  &.card-sm {
+    height: 4rem;
+  }
+  &.card-md {
+    height: 8rem;
+  }
+  &.card-lg {
+    height: 12rem;
+  }
 }

@@ -8,9 +8,23 @@ function Card({
   description,
   title,
   variant = 'center',
+  size,
   className = '',
   children,
 }) {
+  const sizeClass = useMemo(() => {
+    switch (size) {
+      case 'sm':
+        return 'card-sm';
+      case 'md':
+        return 'card-md';
+      case 'lg':
+        return 'card-lg';
+      default:
+        return '';
+    }
+  }, [size]);
+
   const variantClass = useMemo(() => {
     switch (variant) {
       case 'center':
@@ -23,7 +37,10 @@ function Card({
   }, [variant]);
 
   return (
-    <div data-component="Card" className={classNames(variantClass, className)}>
+    <div
+      data-component="Card"
+      className={classNames(variantClass, sizeClass, className)}
+    >
       {!!title && (
         <Text className="card-title" variant="h5" component="h3">
           {title}
@@ -45,6 +62,7 @@ Card.propTypes = {
   variant: PropTypes.oneOf(['center', 'start-center']),
   className: PropTypes.string,
   children: PropTypes.any,
+  size: PropTypes.oneOf(['sm', 'md', 'lg']),
 };
 
 export default Card;
