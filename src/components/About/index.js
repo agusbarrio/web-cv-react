@@ -2,8 +2,16 @@ import { ASSETS } from '../../constants';
 import './style.scss';
 import Card from '../Card';
 import Text from '../Text';
+import { useMemo } from 'react';
 
 function About() {
+  const age = useMemo(
+    () =>
+      parseInt(
+        (new Date().getTime() - new Date(2000, 5, 12).getTime()) / 31536000000
+      ),
+    []
+  );
   return (
     <article data-component="About">
       <Text variant="h1" component="h1" className="about-title">
@@ -18,10 +26,8 @@ function About() {
 
         <div className="about-info">
           <Text variant="body1" component="p" className="about-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque ad
-            odit ratione eos perferendis iusto temporibus delectus. Laudantium
-            veritatis laborum reiciendis rerum non nemo hic accusantium sunt,
-            qui perferendis enim?
+            Hola! Mi nombre es Agustín, desarrollador web full stack, Tengo{' '}
+            {age} años. Resido actualmente en Buenos Aires, Argentina.
           </Text>
           <div className="cards-container">
             <Card
