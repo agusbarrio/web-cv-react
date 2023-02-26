@@ -1,0 +1,1035 @@
+{
+  "id": 1,
+  "userId": 1,
+  "title": "Web CV React",
+  "introId": 1,
+  "contactId": 1,
+  "intro": {
+    "id": 1,
+    "userId": 2,
+    "firstName": "Agustín Adolfo",
+    "lastName": "Barrio Eastman",
+    "headLine": "Desarrollador full stack",
+    "birthday": "2000-06-12",
+    "about": "Hola! Mi nombre es Agustín, desarrollador web full stack, Tengo {{age}} años. Resido actualmente en Buenos Aires, Argentina.",
+    "imgUrl": "./assets/Me.jpg"
+  },
+  "contact": {
+    "id": 1,
+    "userId": 2,
+    "title": "Web CV React",
+    "linkedin": "https://www.linkedin.com/in/agustin-adolfo-barrio-eastman/",
+    "email": "agusbarrioeastman@gmail.com",
+    "github": "https://github.com/agusbarrio",
+    "country": "Argentina",
+    "city": "Capital Federal",
+    "website": "https://barrio-eastman.netlify.app/"
+  },
+  "experiences": [
+    {
+      "id": 2,
+      "userid": 2,
+      "title": "Desarrollador de software",
+      "companyName": "Solúnika",
+      "startDate": "2022-06-13",
+      "employmentType": "FULL_TIME",
+      "industry": "Software",
+      "description": "Como desarrollador Full Stack, me desempeño en el desarrollo de plataformas web tanto en el frontend como en el backend. Además, participo activamente en la planificación y ejecución de proyectos de desarrollo de software, colaborando con el equipo de diseño para crear soluciones efectivas. También participo en el desarrollo de librerías y microfrontends.",
+      "imgUrl": "./assets/experiences/solunika-icon.svg",
+      "projects": [
+        {
+          "id": 10,
+          "userId": 2,
+          "name": "Hubeet",
+          "startDate": "2022-06-13",
+          "endDate": "",
+          "description": "Plataforma de soporte por videoconferencia integrable en sitios web",
+          "url": "https://www.hubeet.com/",
+          "imgUrl": "./assets/projects/hubeet.jpg",
+          "aditionalData": {
+            "type": "FULL_STACK"
+          }
+        }
+      ],
+      "skills": [
+        {
+          "id": 1,
+          "userId": 2,
+          "name": "HTML",
+          "imgUrl": "./assets/skills/html-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 2,
+          "userId": 2,
+          "name": "CSS",
+          "imgUrl": "./assets/skills/css-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 3,
+          "userId": 2,
+          "name": "Javascript",
+          "imgUrl": "./assets/skills/javascript-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 4,
+          "userId": 2,
+          "name": "React.js",
+          "imgUrl": "./assets/skills/reactjs-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 5,
+          "userId": 2,
+          "name": "Material UI",
+          "imgUrl": "./assets/skills/mui-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 7,
+          "userId": 2,
+          "name": "Node.js",
+          "imgUrl": "./assets/skills/nodejs-icon.svg",
+          "aditionalData": {
+            "type": "BACKEND"
+          }
+        },
+        {
+          "id": 8,
+          "userId": 2,
+          "name": "GraphQL",
+          "imgUrl": "./assets/skills/graphql-icon.svg",
+          "aditionalData": {
+            "type": "BACKEND"
+          }
+        },
+        {
+          "id": 9,
+          "userId": 2,
+          "name": "MySQL",
+          "imgUrl": "./assets/skills/mysql-icon.svg",
+          "aditionalData": {
+            "type": "BACKEND"
+          }
+        },
+        {
+          "id": 10,
+          "userId": 2,
+          "name": "Sequelize",
+          "imgUrl": "./assets/skills/sequelize-icon.svg",
+          "aditionalData": {
+            "type": "BACKEND"
+          }
+        },
+        {
+          "id": 11,
+          "userId": 2,
+          "name": "Express.js",
+          "imgUrl": "./assets/skills/expressjs-icon.svg",
+          "aditionalData": {
+            "type": "BACKEND"
+          }
+        },
+        {
+          "id": 12,
+          "userId": 2,
+          "name": "Redux",
+          "imgUrl": "./assets/skills/redux-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 13,
+          "userId": 2,
+          "name": "Sass",
+          "imgUrl": "./assets/skills/sass-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "userId": 2,
+      "name": "CV Manager",
+      "startDate": "2022-11-29",
+      "endDate": "",
+      "description": "Plataforma de administración de curriculums. Permite registrarse y ver, crear, editar, y eliminar curriculums e información pertinente a ellos. Tambien posee la opción de consultar la información de tus curriculums mediante apikeys desde otros dominios",
+      "url": "https://cv-manager.onrender.com/",
+      "imgUrl": "./assets/projects/cv-manager.jpg",
+      "skills": [
+        {
+          "id": 4,
+          "userId": 2,
+          "name": "React.js",
+          "imgUrl": "./assets/skills/reactjs-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 5,
+          "userId": 2,
+          "name": "Material UI",
+          "imgUrl": "./assets/skills/mui-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 7,
+          "userId": 2,
+          "name": "Node.js",
+          "imgUrl": "./assets/skills/nodejs-icon.svg",
+          "aditionalData": {
+            "type": "BACKEND"
+          }
+        },
+        {
+          "id": 9,
+          "userId": 2,
+          "name": "MySQL",
+          "imgUrl": "./assets/skills/mysql-icon.svg",
+          "aditionalData": {
+            "type": "BACKEND"
+          }
+        },
+        {
+          "id": 10,
+          "userId": 2,
+          "name": "Sequelize",
+          "imgUrl": "./assets/skills/sequelize-icon.svg",
+          "aditionalData": {
+            "type": "BACKEND"
+          }
+        },
+        {
+          "id": 11,
+          "userId": 2,
+          "name": "Express.js",
+          "imgUrl": "./assets/skills/expressjs-icon.svg",
+          "aditionalData": {
+            "type": "BACKEND"
+          }
+        }
+      ],
+      "aditionalData": {
+        "type": "FULL_STACK",
+        "githubBackend": "https://github.com/agusbarrio/cv-manager-backend",
+        "githubFrontend": "https://github.com/agusbarrio/cv-manager-frontend"
+      }
+    },
+    {
+      "id": 6,
+      "userId": 2,
+      "name": "Presupuesto personal",
+      "startDate": "2022-04-05",
+      "endDate": "2022-05-20",
+      "description": "Plataforma de administración de presupuesto personal. Backend y frontend",
+      "url": "",
+      "imgUrl": "./assets/projects/personal-budget.jpg",
+      "skills": [
+        {
+          "id": 1,
+          "userId": 2,
+          "name": "HTML",
+          "imgUrl": "./assets/skills/html-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 3,
+          "userId": 2,
+          "name": "Javascript",
+          "imgUrl": "./assets/skills/javascript-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 6,
+          "userId": 2,
+          "name": "Bootstrap",
+          "imgUrl": "./assets/skills/bootstrap-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 7,
+          "userId": 2,
+          "name": "Node.js",
+          "imgUrl": "./assets/skills/nodejs-icon.svg",
+          "aditionalData": {
+            "type": "BACKEND"
+          }
+        },
+        {
+          "id": 9,
+          "userId": 2,
+          "name": "MySQL",
+          "imgUrl": "./assets/skills/mysql-icon.svg",
+          "aditionalData": {
+            "type": "BACKEND"
+          }
+        },
+        {
+          "id": 10,
+          "userId": 2,
+          "name": "Sequelize",
+          "imgUrl": "./assets/skills/sequelize-icon.svg",
+          "aditionalData": {
+            "type": "BACKEND"
+          }
+        },
+        {
+          "id": 11,
+          "userId": 2,
+          "name": "Express.js",
+          "imgUrl": "./assets/skills/expressjs-icon.svg",
+          "aditionalData": {
+            "type": "BACKEND"
+          }
+        }
+      ],
+      "aditionalData": {
+        "type": "FULL_STACK",
+        "githubBackend": "https://github.com/agusbarrio/personal-budget-backend",
+        "githubFrontend": "https://github.com/agusbarrio/personal-budget-frontend"
+      }
+    },
+    {
+      "id": 7,
+      "userId": 2,
+      "name": "Disney API",
+      "startDate": "2022-08-30",
+      "endDate": "2022-11-27",
+      "description": "Backend que permite registrarse y administrar tus películas, géneros de películas y personajes.",
+      "url": "",
+      "imgUrl": "./assets/projects/disney-api.jpg",
+      "skills": [
+        {
+          "id": 7,
+          "userId": 2,
+          "name": "Node.js",
+          "imgUrl": "./assets/skills/nodejs-icon.svg",
+          "aditionalData": {
+            "type": "BACKEND"
+          }
+        },
+        {
+          "id": 9,
+          "userId": 2,
+          "name": "MySQL",
+          "imgUrl": "./assets/skills/mysql-icon.svg",
+          "aditionalData": {
+            "type": "BACKEND"
+          }
+        },
+        {
+          "id": 10,
+          "userId": 2,
+          "name": "Sequelize",
+          "imgUrl": "./assets/skills/sequelize-icon.svg",
+          "aditionalData": {
+            "type": "BACKEND"
+          }
+        },
+        {
+          "id": 11,
+          "userId": 2,
+          "name": "Express.js",
+          "imgUrl": "./assets/skills/expressjs-icon.svg",
+          "aditionalData": {
+            "type": "BACKEND"
+          }
+        }
+      ],
+      "aditionalData": {
+        "type": "BACKEND",
+        "githubBackend": "https://github.com/agusbarrio/disney-api"
+      }
+    },
+    {
+      "id": 8,
+      "userId": 2,
+      "name": "Web CV",
+      "startDate": "2022-07-29",
+      "endDate": "",
+      "description": "CV y portfolio personal",
+      "url": "https://barrio-eastman.netlify.app/",
+      "imgUrl": "./assets/projects/web-cv.jpg",
+      "skills": [
+        {
+          "id": 4,
+          "userId": 2,
+          "name": "React.js",
+          "imgUrl": "./assets/skills/reactjs-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 13,
+          "userId": 2,
+          "name": "Sass",
+          "imgUrl": "./assets/skills/sass-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        }
+      ],
+      "aditionalData": {
+        "type": "FRONTEND",
+        "githubFrontend": "https://github.com/agusbarrio/web-cv-react"
+      }
+    },
+    {
+      "id": 9,
+      "userId": 2,
+      "name": "Superhero app",
+      "startDate": "2022-08-06",
+      "endDate": "",
+      "description": "Frontend con react para mostrar informacion de superheroes",
+      "url": "",
+      "imgUrl": "./assets/projects/superhero-app.jpg",
+      "skills": [
+        {
+          "id": 4,
+          "userId": 2,
+          "name": "React.js",
+          "imgUrl": "./assets/skills/reactjs-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 5,
+          "userId": 2,
+          "name": "Material UI",
+          "imgUrl": "./assets/skills/mui-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        }
+      ],
+      "aditionalData": {
+        "type": "FRONTEND",
+        "githubFrontend": "https://github.com/agusbarrio/superhero-app"
+      }
+    },
+    {
+      "id": 10,
+      "userId": 2,
+      "name": "Hubeet",
+      "startDate": "2022-06-13",
+      "endDate": "",
+      "description": "Plataforma de soporte por videoconferencia integrable en sitios web",
+      "url": "https://www.hubeet.com/",
+      "imgUrl": "./assets/projects/hubeet.jpg",
+      "experience": {
+        "id": 2,
+        "userid": 2,
+        "title": "Desarrollador de software",
+        "companyName": "Solúnika",
+        "startDate": "2022-06-13",
+        "employmentType": "FULL_TIME",
+        "industry": "Software",
+        "description": "Como desarrollador Full Stack, me desempeño en el desarrollo de plataformas web tanto en el frontend como en el backend. Además, participo activamente en la planificación y ejecución de proyectos de desarrollo de software, colaborando con el equipo de diseño para crear soluciones efectivas. También participo en el desarrollo de librerías y microfrontends.",
+        "imgUrl": "./assets/experiences/solunika-icon.svg"
+      },
+      "skills": [
+        {
+          "id": 1,
+          "userId": 2,
+          "name": "HTML",
+          "imgUrl": "./assets/skills/html-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 2,
+          "userId": 2,
+          "name": "CSS",
+          "imgUrl": "./assets/skills/css-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 3,
+          "userId": 2,
+          "name": "Javascript",
+          "imgUrl": "./assets/skills/javascript-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 4,
+          "userId": 2,
+          "name": "React.js",
+          "imgUrl": "./assets/skills/reactjs-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 5,
+          "userId": 2,
+          "name": "Material UI",
+          "imgUrl": "./assets/skills/mui-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 7,
+          "userId": 2,
+          "name": "Node.js",
+          "imgUrl": "./assets/skills/nodejs-icon.svg",
+          "aditionalData": {
+            "type": "BACKEND"
+          }
+        },
+        {
+          "id": 8,
+          "userId": 2,
+          "name": "GraphQL",
+          "imgUrl": "./assets/skills/graphql-icon.svg",
+          "aditionalData": {
+            "type": "BACKEND"
+          }
+        },
+        {
+          "id": 9,
+          "userId": 2,
+          "name": "MySQL",
+          "imgUrl": "./assets/skills/mysql-icon.svg",
+          "aditionalData": {
+            "type": "BACKEND"
+          }
+        },
+        {
+          "id": 10,
+          "userId": 2,
+          "name": "Sequelize",
+          "imgUrl": "./assets/skills/sequelize-icon.svg",
+          "aditionalData": {
+            "type": "BACKEND"
+          }
+        },
+        {
+          "id": 11,
+          "userId": 2,
+          "name": "Express.js",
+          "imgUrl": "./assets/skills/expressjs-icon.svg",
+          "aditionalData": {
+            "type": "BACKEND"
+          }
+        },
+        {
+          "id": 12,
+          "userId": 2,
+          "name": "Redux",
+          "imgUrl": "./assets/skills/redux-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        }
+      ],
+      "aditionalData": {
+        "type": "FULL_STACK"
+      }
+    },
+    {
+      "id": 11,
+      "userId": 2,
+      "name": "Four card feature section",
+      "startDate": "2022-01-13",
+      "endDate": "2022-01-13",
+      "description": "Cuatro tarjetas hechas con html y css",
+      "url": "https://agusbarrio.github.io/Four-card-feature-section/",
+      "imgUrl": "./assets/projects/Four-card-feature-section.jpg",
+      "skills": [
+        {
+          "id": 1,
+          "userId": 2,
+          "name": "HTML",
+          "imgUrl": "./assets/skills/html-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 2,
+          "userId": 2,
+          "name": "CSS",
+          "imgUrl": "./assets/skills/css-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        }
+      ],
+      "aditionalData": {
+        "type": "LITTLE_FRONTEND",
+        "githubFrontend": "https://github.com/agusbarrio/Four-card-feature-section"
+      }
+    },
+    {
+      "id": 12,
+      "userId": 2,
+      "name": "Article preview component",
+      "startDate": "2022-01-11",
+      "endDate": "2022-01-11",
+      "description": "Vista previa de artículo hecha con HTML, CSS y Javascript",
+      "url": "https://agusbarrio.github.io/Article-preview-component",
+      "imgUrl": "./assets/projects/Article-preview-component.jpg",
+      "skills": [
+        {
+          "id": 1,
+          "userId": 2,
+          "name": "HTML",
+          "imgUrl": "./assets/skills/html-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 2,
+          "userId": 2,
+          "name": "CSS",
+          "imgUrl": "./assets/skills/css-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 3,
+          "userId": 2,
+          "name": "Javascript",
+          "imgUrl": "./assets/skills/javascript-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        }
+      ],
+      "aditionalData": {
+        "type": "LITTLE_FRONTEND",
+        "githubFrontend": "https://github.com/agusbarrio/Article-preview-component"
+      }
+    },
+    {
+      "id": 13,
+      "userId": 2,
+      "name": "Social proof section",
+      "startDate": "2022-01-07",
+      "endDate": "2022-01-07",
+      "description": "Sección de demostración social hecha con HTML y CSS",
+      "url": "https://agusbarrio.github.io/Social-proof-section",
+      "imgUrl": "./assets/projects/Social-proof-section.jpg",
+      "skills": [
+        {
+          "id": 1,
+          "userId": 2,
+          "name": "HTML",
+          "imgUrl": "./assets/skills/html-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 2,
+          "userId": 2,
+          "name": "CSS",
+          "imgUrl": "./assets/skills/css-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        }
+      ],
+      "aditionalData": {
+        "type": "LITTLE_FRONTEND",
+        "githubFrontend": "https://github.com/agusbarrio/Social-proof-section"
+      }
+    },
+    {
+      "id": 14,
+      "userId": 2,
+      "name": "FAQ accordion card",
+      "startDate": "2022-01-04",
+      "endDate": "2022-01-04",
+      "description": "Tarjeta con acordeón de preguntas frecuentes usando HTML, CSS y Javascript",
+      "url": "https://agusbarrio.github.io/FAQ-accordion-card",
+      "imgUrl": "./assets/projects/FAQ-accordion-card.jpg",
+      "skills": [
+        {
+          "id": 1,
+          "userId": 2,
+          "name": "HTML",
+          "imgUrl": "./assets/skills/html-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 2,
+          "userId": 2,
+          "name": "CSS",
+          "imgUrl": "./assets/skills/css-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 3,
+          "userId": 2,
+          "name": "Javascript",
+          "imgUrl": "./assets/skills/javascript-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        }
+      ],
+      "aditionalData": {
+        "type": "LITTLE_FRONTEND",
+        "githubFrontend": "https://github.com/agusbarrio/FAQ-accordion-card"
+      }
+    },
+    {
+      "id": 15,
+      "userId": 2,
+      "name": "Profile card component",
+      "startDate": "2022-01-02",
+      "endDate": "2022-01-02",
+      "description": "Tarjeta de perfil hecha con HTML y CSS",
+      "url": "https://agusbarrio.github.io/Profile-card-component",
+      "imgUrl": "./assets/projects/Profile-card-component.jpg",
+      "skills": [
+        {
+          "id": 1,
+          "userId": 2,
+          "name": "HTML",
+          "imgUrl": "./assets/skills/html-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 2,
+          "userId": 2,
+          "name": "CSS",
+          "imgUrl": "./assets/skills/css-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        }
+      ],
+      "aditionalData": {
+        "type": "LITTLE_FRONTEND",
+        "githubFrontend": "https://github.com/agusbarrio/Profile-card-component"
+      }
+    },
+    {
+      "id": 16,
+      "userId": 2,
+      "name": "Columns preview card component",
+      "startDate": "2022-01-01",
+      "endDate": "2022-01-01",
+      "description": "Tarjeta de vista previa de columnas hecha con HTML y CSS",
+      "url": "https://agusbarrio.github.io/Columns-preview-card-component",
+      "imgUrl": "./assets/projects/Columns-preview-card-component.jpg",
+      "skills": [
+        {
+          "id": 1,
+          "userId": 2,
+          "name": "HTML",
+          "imgUrl": "./assets/skills/html-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 2,
+          "userId": 2,
+          "name": "CSS",
+          "imgUrl": "./assets/skills/css-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        }
+      ],
+      "aditionalData": {
+        "type": "LITTLE_FRONTEND",
+        "githubFrontend": "https://github.com/agusbarrio/Columns-preview-card-component"
+      }
+    },
+    {
+      "id": 17,
+      "userId": 2,
+      "name": "Stats preview card component",
+      "startDate": "2022-30-12",
+      "endDate": "2022-30-12",
+      "description": "Tarjeta de vista previa de estadísticas hecha con HTML y CSS",
+      "url": "https://agusbarrio.github.io/Stats-preview-card-component",
+      "imgUrl": "./assets/projects/Stats-preview-card-component.jpg",
+      "skills": [
+        {
+          "id": 1,
+          "userId": 2,
+          "name": "HTML",
+          "imgUrl": "./assets/skills/html-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 2,
+          "userId": 2,
+          "name": "CSS",
+          "imgUrl": "./assets/skills/css-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        }
+      ],
+      "aditionalData": {
+        "type": "LITTLE_FRONTEND",
+        "githubFrontend": "https://github.com/agusbarrio/Stats-preview-card-component"
+      }
+    },
+    {
+      "id": 18,
+      "userId": 2,
+      "name": "Order summary component",
+      "startDate": "2022-29-12",
+      "endDate": "2022-29-12",
+      "description": "Resumen de pedido con HTML y CSS",
+      "url": "https://agusbarrio.github.io/Order-summary-component",
+      "imgUrl": "./assets/projects/Order-summary-component.jpg",
+      "skills": [
+        {
+          "id": 1,
+          "userId": 2,
+          "name": "HTML",
+          "imgUrl": "./assets/skills/html-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 2,
+          "userId": 2,
+          "name": "CSS",
+          "imgUrl": "./assets/skills/css-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        }
+      ],
+      "aditionalData": {
+        "type": "LITTLE_FRONTEND",
+        "githubFrontend": "https://github.com/agusbarrio/Order-summary-component"
+      }
+    },
+    {
+      "id": 19,
+      "userId": 2,
+      "name": "NFT preview card component",
+      "startDate": "2022-27-12",
+      "endDate": "2022-29-12",
+      "description": "Tarjeta hecha con HTML y CSS",
+      "url": "https://agusbarrio.github.io/NFT-preview-card-component",
+      "imgUrl": "./assets/projects/NFT-preview-card-component.jpg",
+      "skills": [
+        {
+          "id": 1,
+          "userId": 2,
+          "name": "HTML",
+          "imgUrl": "./assets/skills/html-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        },
+        {
+          "id": 2,
+          "userId": 2,
+          "name": "CSS",
+          "imgUrl": "./assets/skills/css-icon.svg",
+          "aditionalData": {
+            "type": "FRONTEND"
+          }
+        }
+      ],
+      "aditionalData": {
+        "type": "LITTLE_FRONTEND",
+        "githubFrontend": "https://github.com/agusbarrio/NFT-preview-card-component"
+      }
+    }
+  ],
+  "educations": [
+    {
+      "id": 1,
+      "userId": 2,
+      "school": "Universidad tecnológica nacional",
+      "degree": "Ingeniería en sistemas de información",
+      "fieldOfStudy": "Informática",
+      "startDate": "2021-03-16",
+      "imgUrl": "./assets/utn-icon.svg",
+      "aditionalData": {
+        "type": "UNIVERSITY",
+        "approvedSubjects": 5
+      }
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "school": "Codo a codo 4.0",
+      "degree": "Full stack - Desarrollo web (Javascript / Node.js)",
+      "fieldOfStudy": "Informática",
+      "startDate": "2021-03-16",
+      "endDate": "2021-05-16",
+      "imgUrl": "./assets/ba-icon.svg",
+      "aditionalData": {
+        "type": "COURSE"
+      }
+    }
+  ],
+  "skills": [
+    {
+      "id": 1,
+      "userId": 2,
+      "name": "HTML",
+      "imgUrl": "./assets/skills/html-icon.svg",
+      "aditionalData": {
+        "type": "FRONTEND"
+      }
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "name": "CSS",
+      "imgUrl": "./assets/skills/css-icon.svg",
+      "aditionalData": {
+        "type": "FRONTEND"
+      }
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "name": "Javascript",
+      "imgUrl": "./assets/skills/javascript-icon.svg",
+      "aditionalData": {
+        "type": "FRONTEND"
+      }
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "name": "React.js",
+      "imgUrl": "./assets/skills/reactjs-icon.svg",
+      "aditionalData": {
+        "type": "FRONTEND"
+      }
+    },
+    {
+      "id": 5,
+      "userId": 2,
+      "name": "Material UI",
+      "imgUrl": "./assets/skills/mui-icon.svg",
+      "aditionalData": {
+        "type": "FRONTEND"
+      }
+    },
+    {
+      "id": 6,
+      "userId": 2,
+      "name": "Bootstrap",
+      "imgUrl": "./assets/skills/bootstrap-icon.svg",
+      "aditionalData": {
+        "type": "FRONTEND"
+      }
+    },
+    {
+      "id": 7,
+      "userId": 2,
+      "name": "Node.js",
+      "imgUrl": "./assets/skills/nodejs-icon.svg",
+      "aditionalData": {
+        "type": "BACKEND"
+      }
+    },
+    {
+      "id": 8,
+      "userId": 2,
+      "name": "GraphQL",
+      "imgUrl": "./assets/skills/graphql-icon.svg",
+      "aditionalData": {
+        "type": "BACKEND"
+      }
+    },
+    {
+      "id": 9,
+      "userId": 2,
+      "name": "MySQL",
+      "imgUrl": "./assets/skills/mysql-icon.svg",
+      "aditionalData": {
+        "type": "BACKEND"
+      }
+    },
+    {
+      "id": 10,
+      "userId": 2,
+      "name": "Sequelize",
+      "imgUrl": "./assets/skills/sequelize-icon.svg",
+      "aditionalData": {
+        "type": "BACKEND"
+      }
+    },
+    {
+      "id": 11,
+      "userId": 2,
+      "name": "Express.js",
+      "imgUrl": "./assets/skills/expressjs-icon.svg",
+      "aditionalData": {
+        "type": "BACKEND"
+      }
+    },
+    {
+      "id": 12,
+      "userId": 2,
+      "name": "Redux",
+      "imgUrl": "./assets/skills/redux-icon.svg",
+      "aditionalData": {
+        "type": "FRONTEND"
+      }
+    },
+    {
+      "id": 13,
+      "userId": 2,
+      "name": "Sass",
+      "imgUrl": "./assets/skills/sass-icon.svg",
+      "aditionalData": {
+        "type": "FRONTEND"
+      }
+    }
+  ]
+}
